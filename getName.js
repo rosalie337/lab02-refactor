@@ -1,12 +1,6 @@
-function getName(items, name) {
-    for(let i = 0; i < items.length; i++) {
-        const item = items[i];
-
-        if(item.name === name) {
-            return name;
-        }
-    }
-    return null;
+const getName = (items, name) => {
+    const foundName = items.find(item => item.name === name);
+    return foundName;
 }
 
 module.exports = {
