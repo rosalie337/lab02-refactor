@@ -8,7 +8,10 @@ describe('getName function', () => {
             { name: 'raphsody', album: 'Laila\'s Wisdom ', release_year: 1999, tracks: 14 },
 
         ];
-        const oneArtist = getName(artist, 'mos def');
+        const oneArtist = getName(artists, 'mos def');
+
+        expect(oneArtist)
+            .toEqual({ name: 'mos def', album: 'black on both sides', release_year: 1999, tracks: 17 })
     });
 });
 
