@@ -15,4 +15,3 @@ describe('getName function', () => {
     });
 });
 
-module.exports = {};
